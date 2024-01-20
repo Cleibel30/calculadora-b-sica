@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="calculadora-cuerpo">
-        <input type="text" class="resultado">
+        <input type="text" class="resultado" placeholder="ingresa una operación">
         <div class="botones">
             <div class="botones-numeros">
                 <button class="boton numero" value="9">9</button>
@@ -22,18 +22,20 @@
                 <button class="boton numero" value="1">1</button>
                 <button class="boton numero" value="0">0</button>
 
-                <button class="boton punto" value=".">.</button>
+                <button class="boton numero" value=".">.</button>
                 <button id="igual" class="boton" value="=">=</button>
             </div>
             <div class="botones-simbolos">
-                <button id="division" class="boton simbolo" value="division">/</button>
-                <button id="multiplicacion" class="boton simbolo" value="multiplicacion">*</button>
-                <button id="suma" class="boton simbolo" value="suma">+</button>
-                <button id="resta" class="boton simbolo" value="resta">-</button>
+                <button id="division" class="boton simbolo" value="/">/</button>
+                <button id="multiplicacion" class="boton simbolo" value="*">*</button>
+                <button id="suma" class="boton simbolo" value="+">+</button>
+                <button id="resta" class="boton simbolo" value="-">-</button>
             </div>
+                <button id="quitar" class="boton simbolo ce" value="quitar"><i class="fa-solid fa-delete-left"></i></button>
                 <button id="ce" class="boton simbolo ce" value="ce">CE</button>
         </div>
     </div>
     <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/2318a21304.js" crossorigin="anonymous"></script>
 </body>
 </html>
