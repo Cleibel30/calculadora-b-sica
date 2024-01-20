@@ -7,18 +7,37 @@
 
 body{
     width: 100%;
-    height: 92vh;
+    height: 100vh;
+    background-image: radial-gradient(circle at 100% 0%, #0095ff 0, #0091ff 5.56%, #008cff 11.11%, #0087ff 16.67%, #0080ff 22.22%, #4479ff 27.78%, #7271fa 33.33%, #9169f1 38.89%, #aa5fe5 44.44%, #be55d8 50%, #cf4aca 55.56%, #dc40ba 61.11%, #e736aa 66.67%, #ee2d99 72.22%, #f42788 77.78%, #f62677 83.33%, #f72a66 88.89%, #f53255 94.44%, #f23b45 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.textos{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contenedor{
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .calculadora-cuerpo{
-    width: 600px;
+    width: 40%;
     height: auto;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.455);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.144);
+    backdrop-filter: blur(100px);
+    border: 1px solid #fff;
 }
 
 .resultado{
@@ -29,14 +48,15 @@ body{
     outline: none;
     border: none;
     background: none;
-    border: 1px solid black;
     padding: 10px;
     font-size: 18px;
     margin-bottom: 8px;
+    background: white;
 }
 
 .botones{
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -45,27 +65,44 @@ body{
     height: 50px;
     border: none;
     background: none;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 244, 244);
+    color: #fff;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 400;
-    cursor: pointer;
+    cursor: pointer;    
+}
+
+.boton:hover{
+    background-color: #fff;
+    color: black;
 }
 
 .botones-numeros{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(4, auto); */
     gap: 8px;
     margin-right: 8px;
 }
 
 .botones-simbolos{
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
 
-.ce{
-    width: 120px;
-    margin-left: 8px;
-}
+@media (max-width: 900px) {
+    .calculadora-cuerpo{
+        width: 80%;
+    }
+
+  }
+@media (max-width: 576px) {
+    .calculadora-cuerpo{
+        width: 80%;
+    }
+    .boton{
+        width: 60px;
+    }
+  }

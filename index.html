@@ -7,32 +7,41 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="calculadora-cuerpo">
-        <input type="text" class="resultado" placeholder="ingresa una operación">
-        <div class="botones">
-            <div class="botones-numeros">
-                <button class="boton numero" value="9">9</button>
-                <button class="boton numero" value="8">8</button>
-                <button class="boton numero" value="7">7</button>
-                <button class="boton numero" value="6">6</button>
-                <button class="boton numero" value="5">5</button>
-                <button class="boton numero" value="4">4</button>
-                <button class="boton numero" value="3">3</button>
-                <button class="boton numero" value="2">2</button>
-                <button class="boton numero" value="1">1</button>
-                <button class="boton numero" value="0">0</button>
+    <div class="textos">
+        <h1>Calculadora básica</h1>
+        <h2>Hecha por Cleibel Campos</h2>
+    </div>
 
-                <button class="boton numero" value=".">.</button>
-                <button id="igual" class="boton" value="=">=</button>
+    <div class="contenedor">
+        <div class="calculadora-cuerpo">
+            <input type="text" class="resultado" placeholder="ingresa una operación">
+            <div class="botones">
+                <div class="botones-numeros">
+                    <button class="boton numero" value="9">9</button>
+                    <button class="boton numero" value="8">8</button>
+                    <button class="boton numero" value="7">7</button>
+                    <button class="boton numero" value="6">6</button>
+                    <button class="boton numero" value="5">5</button>
+                    <button class="boton numero" value="4">4</button>
+                    <button class="boton numero" value="3">3</button>
+                    <button class="boton numero" value="2">2</button>
+                    <button class="boton numero" value="1">1</button>
+                    <button class="boton numero" value="0">0</button>
+    
+                    <button class="boton numero" value=".">.</button>
+
+                    <button id="division" class="boton simbolo" value="/">/</button>
+                    <button id="multiplicacion" class="boton simbolo" value="*">*</button>
+                    <button id="suma" class="boton simbolo" value="+">+</button>
+                    <button id="resta" class="boton simbolo" value="-">-</button>
+                </div>
+                <div class="botones-simbolos">
+                    <button id="quitar" class="boton simbolo ce" value="quitar"><i class="fa-solid fa-delete-left"></i></button>
+                    <button id="ce" class="boton simbolo ce" value="ce">CE</button>
+                    <button id="igual" class="boton" value="=">=</button>
+                </div>
+                    
             </div>
-            <div class="botones-simbolos">
-                <button id="division" class="boton simbolo" value="/">/</button>
-                <button id="multiplicacion" class="boton simbolo" value="*">*</button>
-                <button id="suma" class="boton simbolo" value="+">+</button>
-                <button id="resta" class="boton simbolo" value="-">-</button>
-            </div>
-                <button id="quitar" class="boton simbolo ce" value="quitar"><i class="fa-solid fa-delete-left"></i></button>
-                <button id="ce" class="boton simbolo ce" value="ce">CE</button>
         </div>
     </div>
     <script src="js/main.js"></script>
