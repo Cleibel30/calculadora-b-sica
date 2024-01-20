@@ -1,6 +1,6 @@
 
 document.querySelector(".resultado").addEventListener("keydown", (e)=>{
-    if(!(e.key == 0 || e.key == 1 || e.key == 2 || e.key == 3 || e.key == 4 || e.key == 5 || e.key == 6 || e.key == 7 || e.key == 8 || e.key == 9 || e.key == "/" || e.key == "*" || e.key == "+" || e.key == "-")){
+    if(!(e.key == 0 || e.key == 1 || e.key == 2 || e.key == 3 || e.key == 4 || e.key == 5 || e.key == 6 || e.key == 7 || e.key == 8 || e.key == 9 || e.key == "/" || e.key == "*" || e.key == "+" || e.key == "-" || e.key == ".")){
         e.preventDefault()
     }
     else if(document.querySelector(".resultado").value.length == 0 && e.key == 0) e.preventDefault()
@@ -8,7 +8,7 @@ document.querySelector(".resultado").addEventListener("keydown", (e)=>{
     if(e.key == "Backspace") {
         document.querySelector(".resultado").value = document.querySelector(".resultado").value.substring(0, document.querySelector(".resultado").value.length -1)
 
-        if(isNaN(document.querySelector(".resultado").value)){
+        if(isNaN(eval(document.querySelector(".resultado").value))){
             document.querySelector(".resultado").value = "";
         }
     }
@@ -33,7 +33,7 @@ document.querySelector("#igual").addEventListener("click", ()=>{
 document.querySelector("#quitar").addEventListener("click", ()=>{
     document.querySelector(".resultado").value = document.querySelector(".resultado").value.substring(0, document.querySelector(".resultado").value.length -1)
     
-    if(isNaN(document.querySelector(".resultado").value)){
+    if(isNaN(eval(document.querySelector(".resultado").value))){
         document.querySelector(".resultado").value = "";
     }
 })
